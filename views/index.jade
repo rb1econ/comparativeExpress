@@ -1,0 +1,115 @@
+extends layout
+
+block content
+  header
+    h1 Will Trade Help?
+  .container
+    .row
+      .introDiv
+        h3.col-sm-12 Pleased to Meet You:
+        p.introSentence.col-sm-12
+      h2.col-sm-12 Editable Table:
+      table.table.table-hover.sampleTable.col-sm-12
+        tr.tableGoodsOpCost
+          td
+          td.editableTD
+            strong
+              | [
+              span#goodX.editable
+              | ]
+            |  production per week if all time devoted to it
+          td#goodXopCost
+            strong Opportunity Cost
+            |  (what must be given up to produce one unit of the first good)
+          td.editableTD
+            strong
+              | [
+              span#goodY.editable
+              | ]
+            |  production per week if all time devoted to it
+          td#goodYopCost
+            strong Opportunity Cost
+            |  (what must be given up to produce one unit of the second good)
+        tr.tablewayne
+          td.editableTD
+            strong
+              | [
+              span#wayne.editable
+              | ]
+          td.editableTD
+            strong
+              | [
+              span#goodXwayne.editable
+              | ]
+            |  per week
+          td#goodXwayneopCost
+          td.editableTD
+            strong
+              | [
+              span#goodYwayne.editable
+              | ]
+            |  per week
+          td#goodYwayneopCost
+        tr.tablegarth
+          td.editableTD
+            strong
+              | [
+              span#garth.editable
+              | ]
+              td.editableTD
+                strong
+                  | [
+                  span#goodXgarth.editable
+                  | ]
+                |  per week
+              td#goodXgarthopCost
+              td.editableTD
+                strong
+                  | [
+                  span#goodYgarth.editable
+                  | ]
+                |  per week
+              td#goodYgarthopCost
+      h2 Table of Totals:
+      table.table.table-hover.sampleTableTotals.col-sm-12
+        tr
+          td
+          td Total before trade (autarky)
+          td Total after trade and some specialization
+          td Total if completely specialized
+        tr
+          td.goodX
+          td#totalXbefore
+          td#totalXafter
+          td#totalXspecial
+        tr
+          td.goodY
+          td#totalYbefore
+          td#totalYafter
+          td#totalYspecial
+      //
+        <table class="table table-bordered tradeTableTotals col-sm-12" >
+        <tr>
+        <td></td>
+        <td><span class="wayne"></span>'s pre-trade amounts</td>
+        <td><span class="garth"></span>'s pre-trade amounts</td>
+        <td><span class="wayne"></span>'s offer for trade</td>
+        <td><span class="garth"></span>'s counter offer</td>
+        </tr>
+        <tr>
+        <td><span class="goodX"></span></td>
+        <td class="wayneXbefore"></td>
+        <td class="garthXbefore"></td>
+        <td><span id="offer" class="editable"></span></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td><span class="goodY"></span></td>
+        <td class="wayneYbefore"></td>
+        <td class="garthYbefore"></td>
+        <td><span id="request" class="editable"></span></td>
+        <td></td>
+        </tr>
+        </table>
+    .row
+      #chartEvery(style='min-width: 310px; height: 400px; margin: 0 auto')

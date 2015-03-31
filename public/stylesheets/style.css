@@ -1,0 +1,77 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#saveIt{
+   display: inline;
+   height: 23px;   
+   line-height: 0.9;
+   font-size: 12px;
+}
+
+#closeIt{
+   display: inline;
+   height: 23px;   
+   line-height: 0.9;
+   font-size: 12px;
+}
+
+.editable {
+   cursor: pointer;
+}
+
+body {
+   color: #4B4E75;
+   font-size: 18px;
+   background: #ecf0f1;
+}
+h3 {
+   /*font-family: MyWebFont;*/
+   color: #A84317;
+   font-size: 22px;
+}
+
+h2 {
+   /*font-family: MyWebFont;*/
+   color: #A84317;
+   font-size: 26px;
+}
+h1{
+   /*font-family: MyWebFont;*/
+   font-size: 56px;
+   padding: 10px;
+   margin: 0;
+   color: #A84317;
+}
+.container {
+   padding-left: 40px;
+   padding-right: 40px;
+   padding-bottom: 40px;
+   background: #ecf0f1;
+}
+
+.editableTD {
+   /*border-radius: 1em 1em 1em 1em;*/
+}
+
+.table-hover {
+   border-color: #4B4E75;
+}
+
+.editable {
+   color: #A94634;
+   /*font-weight: bold;*/
+   border-radius: 1em;
+}
+
+header {
+   /*color:#3498db;*/
+   text-align: center;
+   /*background: #16a085;*/
+   padding: 30px;
+   border-bottom: 3px solid #4B4E75;
+   border-top: 0;
+   /*border-radius: 0 0 2rem 2rem; */
+   background: #bdc3c7;
+   background-image: url('concrete_seamless.png');
+}
